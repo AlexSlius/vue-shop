@@ -1,38 +1,66 @@
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
     <footer class="footer">
         <div class="footer__wrapp">
             <div class="container">
                 <div class="footer__row">
                     <div class="footer__block">
-                        <a href="#" class="footer-logo"><img src="/src/assets/img/Logo-w.svg" alt="" class="img-logo"></a>
+                        <RouterLink to="/" class="footer-logo">
+                            <img src="/src/assets/img/Logo-w.svg" alt="img logo" class="img-logo">
+                        </RouterLink>
                         <div class="footer__social">
-                            <a href="#" class="icon-social vk"><svg class="icon">
+                            <a href="https://m.vk.com/" class="icon-social vk" target="_blank">
+                                <svg class="icon">
                                     <use xlink:href="/src/assets/img/svg/sprite.svg#vk"></use>
-                                </svg></a>
-                            <a href="#" class="icon-social instagram"><svg class="icon">
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/" class="icon-social instagram" target="_blank">
+                                <svg class="icon">
                                     <use xlink:href="/src/assets/img/svg/sprite.svg#instagram"></use>
-                                </svg></a>
-                            <a href="#" class="icon-social youtube"><svg class="icon">
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/?hl=ru&gl=UA" class="icon-social youtube" target="_blank">
+                                <svg class="icon">
                                     <use xlink:href="/src/assets/img/svg/sprite.svg#youtube"></use>
-                                </svg></a>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div class="footer__column flex-grow">
-                        <h5 class="footer__title">Информация </h5>
+                        <h5 class="footer__title">Информация</h5>
                         <ul class="footer__info">
-                            <li class="info__item"><a href="#" class="info__link">Главная</a></li>
-                            <li class="info__item"><a href="#" class="info__link">О компании</a></li>
-                            <li class="info__item"><a href="#" class="info__link">Новости</a></li>
-                            <li class="info__item"><a href="#" class="info__link">Контакты</a></li>
+                            <li class="info__item">
+                                <RouterLink to="/" class="info__link">Главная</RouterLink>
+                            </li>
+                            <li class="info__item">
+                                <RouterLink to="/about" class="info__link">О компании</RouterLink>
+                            </li>
+                            <li class="info__item">
+                                <RouterLink to="/news" class="info__link">Новости</RouterLink>
+                            </li>
+                            <li class="info__item">
+                                <RouterLink to="/contact" class="info__link">Контакты</RouterLink>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer__column mr">
                         <h5 class="footer__title">Каталог</h5>
                         <ul class="footer__info">
-                            <li class="info__item"><a href="#" class="info__link">Солнцезащитные очки</a></li>
-                            <li class="info__item"><a href="#" class="info__link">Спортивные</a></li>
-                            <li class="info__item"><a href="#" class="info__link">Уход за глазами</a></li>
-                            <li class="info__item"><a href="#" class="info__link">Аксессуары</a></li>
+                            <li class="info__item">
+                                <RouterLink to="/catalog/sun" class="info__link">Солнцезащитные очки</RouterLink>
+                            </li>
+                            <li class="info__item">
+                                <RouterLink to="/catalog/sport" class="info__link">Спортивные</RouterLink>
+                            </li>
+                            <li class="info__item">
+                                <RouterLink to="/catalog/eye" class="info__link">Уход за глазами</RouterLink>
+                            </li>
+                            <li class="info__item">
+                                <RouterLink to="/catalog" class="info__link">Аксессуары</RouterLink>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer__input-block">
@@ -48,9 +76,9 @@
             </div>
         </div>
         <div class="footer__agreement">
-            <a href="#" class="link__agreement">Пользовательское соглашение</a>
-            <a href="#" class="link__agreement">Оферта</a>
-            <a href="#" class="link__agreement">Copyright 2021 AXE. All Right Reserved</a>
+            <RouterLink to="#" class="link__agreement">Пользовательское соглашение</RouterLink>
+            <RouterLink to="#" class="link__agreement">Оферта</RouterLink>
+            <RouterLink to="#" class="link__agreement">Copyright 2021 AXE. All Right Reserved</RouterLink>
         </div>
     </footer>
 

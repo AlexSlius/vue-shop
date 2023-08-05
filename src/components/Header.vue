@@ -16,26 +16,32 @@ import { RouterLink } from 'vue-router';
                 <div class="header__contact">
                     <a href="tel:8(450) 111 11 11" class="header__phone">8 (450) 111 11 11</a>
                     <div class="header__social">
-                        <a href="#" class="icon-social telegram"><svg class="icon">
+                        <a href="https://web.telegram.org/k/" target="_blank" class="icon-social telegram">
+                            <svg class="icon">
                                 <use xlink:href="/src/assets/img/svg/sprite.svg#telegram"></use>
-                            </svg></a>
-                        <a href="#" class="icon-social whatsapp"><svg class="icon">
+                            </svg>
+                        </a>
+                        <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank" class="icon-social whatsapp">
+                            <svg class="icon">
                                 <use xlink:href="/src/assets/img/svg/sprite.svg#whatsapp"></use>
-                            </svg></a>
-                        <a href="#" class="icon-social skype"><svg class="icon">
+                            </svg>
+                        </a>
+                        <a href="https://www.skype.com/ru/" target="_blank" class="icon-social skype">
+                            <svg class="icon">
                                 <use xlink:href="/src/assets/img/svg/sprite.svg#skype"></use>
-                            </svg></a>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="like-basket__block">
                     <div class="menu__btn"><span></span></div>
-                    <a href="#" class="icon__like">
+                    <RouterLink to="/basked" class="icon__like">
                         <span class="like__counter counter">0</span>
-                    </a>
+                    </RouterLink>
                     <div class="basket__block">
-                        <a href="#" class="icon__basket">
+                        <RouterLink to="/basked" class="icon__basket">
                             <span class="basket__counter counter">1</span>
-                        </a>
+                        </RouterLink>
                         <span class="basket__text">В корзине<span class="light-red"> 2000 </span>р.</span>
                     </div>
                 </div>
@@ -71,48 +77,70 @@ import { RouterLink } from 'vue-router';
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu__item"><span><a href="#" class="menu__link">Назначение
-                                    </a> <span class="ml_arrow"><svg class="icon">
+                            <li class="menu__item">
+                                <span>
+                                    <RouterLink to="/info-sun" class="menu__link">Назначение</RouterLink>
+                                    <span class="ml_arrow">
+                                        <svg class="icon">
                                             <use xlink:href="/src/assets/img/svg/sprite.svg#arrow-link"></use>
-                                        </svg></span></span>
+                                        </svg>
+                                    </span>
+                                </span>
                                 <ul class="menu__list drop__list">
-                                    <li class="menu__item"><a href="#" class="menu__link">Солнцезащитные очки</a>
+                                    <li class="menu__item">
+                                        <RouterLink to="/info-sun" class="menu__link">Солнцезащитные очки</RouterLink>
                                     </li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Спортивные</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Уход за глазами</a></li>
-                                    <li class="menu__item"><a href="#" class="menu__link">Защита для глаз</a></li>
+                                    <li class="menu__item">
+                                        <RouterLink to="/info-sport" class="menu__link">Спортивные</RouterLink>
+                                    </li>
+                                    <li class="menu__item">
+                                        <RouterLink to="/yey-care" class="menu__link">Уход за глазами</RouterLink>
+                                    </li>
+                                    <li class="menu__item">
+                                        <RouterLink to="/yey-protection" class="menu__link">Защита для глаз</RouterLink>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="menu__item">
                                 <RouterLink to="/about" class="menu__link">О компании</RouterLink>
                             </li>
-                            <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                            <li class="menu__item">
+                                <RouterLink to="/news" class="menu__link">Новости</RouterLink>
+                            </li>
+                            <li class="menu__item">
+                                <RouterLink to="/contact" class="menu__link">Контакты</RouterLink>
+                            </li>
                         </ul>
                     </nav>
                     <div class="like-basket__block">
-                        <a href="#" class="icon__like">
+                        <RouterLink to="/basked" class="menu__link">
                             <span class="like__counter counter">0</span>
-                        </a>
+                        </RouterLink>
                         <div class="basket__block">
-                            <a href="#" class="icon__basket">
+                            <RouterLink to="/basked" class="icon__basket">
                                 <span class="basket__counter counter">1</span>
-                            </a>
+                            </RouterLink>
                             <span class="basket__text">В корзине<span class="light-red"> 2000 </span>р.</span>
                         </div>
                     </div>
                     <div class="header__contact">
-                        <a href="tel:8(450) 111 11 11" class="header__phone">8 (450) 111 11 11</a>
+                        <a href="tel:8(450)1111111" class="header__phone">8 (450) 111 11 11</a>
                         <div class="header__social">
-                            <a href="#" class="icon-social telegram"><svg class="icon">
+                            <a href="https://web.telegram.org/k/" target="_blank" class="icon-social telegram">
+                                <svg class="icon">
                                     <use xlink:href="/src/assets/img/svg/sprite.svg#telegram"></use>
-                                </svg></a>
-                            <a href="#" class="icon-social whatsapp"><svg class="icon">
+                                </svg>
+                            </a>
+                            <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank" class="icon-social whatsapp">
+                                <svg class="icon">
                                     <use xlink:href="/src/assets/img/svg/sprite.svg#whatsapp"></use>
-                                </svg></a>
-                            <a href="#" class="icon-social skype"><svg class="icon">
+                                </svg>
+                            </a>
+                            <a href="https://www.skype.com/ru/" target="_blank" class="icon-social skype">
+                                <svg class="icon">
                                     <use xlink:href="/src/assets/img/svg/sprite.svg#skype"></use>
-                                </svg></a>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -105,9 +105,6 @@
                         <div class="filter-price__slider" id="range-slider"> </div>
                     </div>
 
-
-
-
                     <a href="#" class="filter-img">
                         <img src="/src/assets/img/filter-2.png" alt="">
                         <span class="filter-name">Спортивные</span>

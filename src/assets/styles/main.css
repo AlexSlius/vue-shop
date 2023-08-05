@@ -7232,6 +7232,10 @@ textarea.error {
   .dry-symptoms-note {
     margin-bottom: 30px;
   }
+
+  .main__wrap {
+    margin-top: 0;
+  }
 }
 
 .block-inf {
