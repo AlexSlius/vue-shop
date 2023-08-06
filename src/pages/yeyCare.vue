@@ -1,17 +1,9 @@
-<template>
-    <div class="breadcrumbs-wrap">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <span>Функции защита для глаз</span>
-                </li>
-            </ul>
-        </div>
+<script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
+</script>
 
-    </div>
+<template>
+    <BreadCrumbs :currentPage="'Функции УХОД ЗА ГЛАЗАМИ'" />
     <div class="eye__care">
         <div class="container">
             <h1 class="page__name">Функции УХОД ЗА ГЛАЗАМИ</h1>

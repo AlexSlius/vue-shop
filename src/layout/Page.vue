@@ -1,9 +1,8 @@
 <script setup>
-import Header from "@/components/Header.vue";
+import Header from "@/components/header/Header.vue";
 import Wrapper from "@/layout/MainWrapp.vue";
 import MainWrap from "@/layout/MainWrapp.vue";
-import Footer from "@/components/Footer.vue";
-
+import Footer from "@/components/footer/Footer.vue";
 </script>
 
 <template>

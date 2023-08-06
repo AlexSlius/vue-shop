@@ -1,19 +1,9 @@
-<template>
-    <div class="main-wrapp">
-        <div class="breadcrumbs-wrap">
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <span>Новости</span>
-                    </li>
-                </ul>
-            </div>
+<script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
+</script>
 
-        </div>
-    </div>
+<template>
+    <BreadCrumbs :currentPage="'НОВОСТИ'" />
     <div class="container ">
         <h1 class="page__name">Контакты</h1>
         <div class="contact__city-wrapp">

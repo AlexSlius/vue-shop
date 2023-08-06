@@ -1,0 +1,44 @@
+{
+    "columnOne": {
+        "title": "Информация",
+        "links": [
+            {
+                "name": "Главная",
+                "path": "/"
+            },
+            {
+                "name": "О компании",
+                "path": "/about"
+            },
+            {
+                "name": "Новости",
+                "path": "/news"
+            },
+            {
+                "name": "Контакты",
+                "path": "/contact"
+            }
+        ]
+    },
+    "columnTwo": {
+        "title": "Каталог",
+        "links": [
+            {
+                "name": "Солнцезащитные очки",
+                "path": "/catalog/sun"
+            },
+            {
+                "name": "Спортивные",
+                "path": "/catalog/sport"
+            },
+            {
+                "name": "Уход за глазами",
+                "path": "/catalog/eye"
+            },
+            {
+                "name": "Аксессуары",
+                "path": "/catalog"
+            }
+        ]
+    }
+}

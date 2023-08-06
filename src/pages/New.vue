@@ -1,19 +1,9 @@
+<script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
+</script>
+
 <template>
-    <div class="breadcrumbs-wrap">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Новости</a>
-                </li>
-                <li>
-                    <span>Открытие горнолыжного сезона</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <BreadCrumbs :currentPage="'Открытие горнолыжного сезона'" :intermediate="[{ page: 'Новости', path: '/news' }]" />
     <div class="container ">
         <h1 class="page__tile">Открытие горнолыжного сезона</h1>
         <div class="news-page__wrapp">

@@ -1,16 +1,10 @@
+<script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
+</script>
+
+
 <template>
-    <div class="breadcrumbs-wrap">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <span>Функции защита для глаз</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <BreadCrumbs :currentPage="'О нас'" />
     <div class="container cnt">
         <h1 class="page__title">О нас</h1>
         <div class="abt-main__img">

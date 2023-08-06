@@ -1,4 +1,5 @@
 <script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
 </script>
 
 <template>
@@ -12,18 +13,7 @@
             </div>
         </div>
     </div>
-    <div class="breadcrumbs-wrap">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <span>Каталог</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <BreadCrumbs :currentPage="'Спортивные очки'" :intermediate="[{ page: 'Каталог', path: '/catalog' }]" />
     <div class="catalog__text-group">
         <div class="container">
             <h1 class="catalog__name">Спортивные очки</h1>
@@ -147,7 +137,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-1.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-1.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">Lt-964r</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -164,7 +155,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-2.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-2.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">jh-123p</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -181,7 +173,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-3.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-3.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">iot-41q</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -199,7 +192,8 @@
                                     <a href="#" class="tenns">TEEN’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-4.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-4.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">wr-789q</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -216,7 +210,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-5.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-5.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">br-455(t)</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -233,7 +228,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-6.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-6.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">ewt-963</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -250,7 +246,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-7.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-7.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">asd-555</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -267,7 +264,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-8.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-8.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">zxc-456q</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -284,7 +282,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-9.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-9.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">hod-230f</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -301,7 +300,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-10.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-10.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">ipv-351(f)</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -318,7 +318,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-11.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-11.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">tgf-856</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -335,7 +336,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-12.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-12.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">rt-228</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -352,7 +354,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-13.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-13.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">dfg-751</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -369,7 +372,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-14.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-14.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">qas-963</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -386,7 +390,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-15.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-15.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">cvb-741</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -403,7 +408,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-16.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-16.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">alg-357</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -420,7 +426,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-17.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-17.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">fgh-123</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -437,7 +444,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-18.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-18.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">ijf-7894</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -454,7 +462,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-19.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-19.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">dert-952</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -471,7 +480,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-20.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-20.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">rfv-958</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -488,7 +498,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-21.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-21.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">vbn-368</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -505,7 +516,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-22.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-22.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">mnr-320</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -522,7 +534,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-23.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-23.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">tyu-956</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -539,7 +552,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-24.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-24.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">mon-564</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -556,7 +570,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-25.png" alt=""></a>
+                            <a href="#" class="product__img"><img src="/src/assets/img/snow_catalog/snow_item-25.png"
+                                    alt=""></a>
                             <a href="#" class="product__name">rtx3090</a>
                             <p class="product__subname">Маска горнолыжная</p>
                             <p class="product__last-prise">3 000.00 р.</p>

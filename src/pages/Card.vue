@@ -1,19 +1,9 @@
+<script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
+</script>
+
 <template>
-    <div class="breadcrumbs-wrap">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Спортивные</a>
-                </li>
-                <li>
-                    <span>Ax990-wcm</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <BreadCrumbs :currentPage="'Ax990-wcm'" :intermediate="[{ page: 'Спортивные', path: '/card' }]" />
     <section class="card__item-sctn">
         <div class="container">
             <div class="card__item-wrapp">
@@ -133,7 +123,8 @@
                                     <div class="card__item__color__img-block">
                                         <div class="card__item__color__img color-active"><img
                                                 src="/src/assets/img/card__item/color-1.png" alt=""></div>
-                                        <div class="card__item__color__img"><img src="/src/assets/img/card__item/color-2.png" alt="">
+                                        <div class="card__item__color__img"><img
+                                                src="/src/assets/img/card__item/color-2.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -247,14 +238,20 @@
                 </div>
                 <div class="card__social-block">
                     <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/vk.svg" alt=""></a>
-                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/facebook.svg" alt=""></a>
+                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/facebook.svg"
+                            alt=""></a>
                     <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/ok.svg" alt=""></a>
-                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/telegram.svg" alt=""></a>
-                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/twitter.svg" alt=""></a>
+                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/telegram.svg"
+                            alt=""></a>
+                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/twitter.svg"
+                            alt=""></a>
                     <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/viber.svg" alt=""></a>
-                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/whatsapp.svg" alt=""></a>
-                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/tumblr.svg" alt=""></a>
-                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/meetme.svg" alt=""></a>
+                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/whatsapp.svg"
+                            alt=""></a>
+                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/tumblr.svg"
+                            alt=""></a>
+                    <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/meetme.svg"
+                            alt=""></a>
                     <a href="#" class="card__social-link"><img src="/src/assets/img/card__item/social/linkedin.svg"></a>
                 </div>
             </div>
@@ -280,8 +277,10 @@
                         <div class="tab__block-text">
                             <p class="tab__title">Функции</p>
                             <div class="tab__block-img">
-                                <img src="/src/assets/img/card__item/tab__description-1.png" alt="img" class="tab__description-img">
-                                <img src="/src/assets/img/card__item/tab__description-2.png" alt="img" class="tab__description-img">
+                                <img src="/src/assets/img/card__item/tab__description-1.png" alt="img"
+                                    class="tab__description-img">
+                                <img src="/src/assets/img/card__item/tab__description-2.png" alt="img"
+                                    class="tab__description-img">
                             </div>
                             <p class="tab__description-text">Lorem ipsum dolor sit amet, consectetur
                                 adipiscing

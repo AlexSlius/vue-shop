@@ -1,16 +1,9 @@
+<script setup>
+import BreadCrumbs from "@/components/BreadCrumbs.vue";
+</script>
+
 <template>
-    <div class="breadcrumbs-wrap">
-        <div class="container">
-            <ul class="breadcrumbs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <span>Каталог</span>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <BreadCrumbs :currentPage="'Каталог'" />
     <div class="catalog__text-group">
         <div class="container">
             <h1 class="page__name">Аксессуары</h1>
@@ -79,8 +72,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/accessories_catalog/accessories_item-1.png"
-                                    alt=""></a>
+                            <a href="#" class="product__img"><img
+                                    src="/src/assets/img/accessories_catalog/accessories_item-1.png" alt=""></a>
                             <a href="#" class="product__name">Lt-964r</a>
                             <p class="product__subname">Солнце защитные очки</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -97,8 +90,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/accessories_catalog/accessories_item-2.png"
-                                    alt=""></a>
+                            <a href="#" class="product__img"><img
+                                    src="/src/assets/img/accessories_catalog/accessories_item-2.png" alt=""></a>
                             <a href="#" class="product__name">jh-123p</a>
                             <p class="product__subname">Солнце защитные очки</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -115,8 +108,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/accessories_catalog/accessories_item-3.png"
-                                    alt=""></a>
+                            <a href="#" class="product__img"><img
+                                    src="/src/assets/img/accessories_catalog/accessories_item-3.png" alt=""></a>
                             <a href="#" class="product__name">iot-41q</a>
                             <p class="product__subname">Солнце защитные очки</p>
                             <p class="product__last-prise">3 000.00 р.</p>
@@ -133,8 +126,8 @@
                                     <a href="#" class="lady">LADY’s</a>
                                 </div>
                             </div>
-                            <a href="#" class="product__img"><img src="/src/assets/img/accessories_catalog/accessories_item-4.png"
-                                    alt=""></a>
+                            <a href="#" class="product__img"><img
+                                    src="/src/assets/img/accessories_catalog/accessories_item-4.png" alt=""></a>
                             <a href="#" class="product__name">wr-789q</a>
                             <p class="product__subname">Солнце защитные очки</p>
                             <p class="product__last-prise">3 000.00 р.</p>
