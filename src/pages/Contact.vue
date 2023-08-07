@@ -1,96 +1,38 @@
 <script setup>
+import { ref } from "vue";
+// components
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
+import ButtonCity from "@/components/ButtonCity.vue";
+import TitlePage from "@/components/TitlePage.vue";
+import SelectCity from "@/components/SelectCity.vue";
+import ContactTabBlock from "@/components/ContactTabBlock.vue";
+import ContactForm from "@/components/ContactForm.vue";
+
+// datas
+import { titlePage, tabs } from "@/dataPages/contact.json";
+
+// functional
+let currentTab = ref(tabs[0].id);
+
+const handleTab = (id) => {
+    currentTab.value = id;
+}
 </script>
 
 <template>
     <BreadCrumbs :currentPage="'НОВОСТИ'" />
     <div class="container ">
-        <h1 class="page__name">Контакты</h1>
+        <TitlePage :name="titlePage" />
         <div class="contact__city-wrapp">
-            <a href="#" class="contact__city city-active">Москва</a>
-            <a href="#" class="contact__city">
-                Санкт-Петербург</a>
-            <a href="#" class="contact__city">Сочи</a>
-            <a href="#" class="contact__city">Новосибирск</a>
-            <a href="#" class="contact__city">Екатеринбург</a>
-            <a href="#" class="contact__city">Нижний Новгород </a>
+            <ButtonCity v-for="iteTab in tabs" :key="iteTab.id" :id="iteTab.id" :name="iteTab.name"
+                :active="iteTab.id == currentTab" :handle="handleTab" />
         </div>
-
-        <div class="select-city">
-            <div class="select__header-city">
-                <div class="select__current-city">Москва</div>
-                <div class="select__icon-city"></div>
-            </div>
-            <div class="select__body-city">
-                <div class="select__item-city"><a href="#">Москва</a></div>
-                <div class="select__item-city"><a href="#">Санкт-Петербург</a></div>
-                <div class="select__item-city"><a href="#">Сочи</a></div>
-                <div class="select__item-city"><a href="#">Новосибирск</a></div>
-                <div class="select__item-city"><a href="#">Екатеринбург</a></div>
-                <div class="select__item-city"><a href="#">Нижний Новгород </a></div>
-            </div>
-        </div>
-
-        <p class="contact__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
-        </p>
-        <div class="contact__info-wrapp">
-            <div class="contact__info-block">
-                <div class="contact__info-element">
-                    <p class="contact__info-title">Адрес: </p>
-                    <p class="contact__info-text">г. Москва, Пакгаузное шоссе д.6</p>
-                </div>
-                <div class="contact__info-element">
-                    <p class="contact__info-title">Телефон:</p>
-                    <p class="contact__info-text">8 (450) 111 11 11</p>
-                </div>
-                <div class="contact__info-element">
-                    <p class="contact__info-title">E-mail:</p>
-                    <p class="contact__info-text">info@axe.ru</p>
-                </div>
-            </div>
-            <a href="#" class="info-logo"><img src="/src/assets/img/Logo.svg" alt=""></a>
-        </div>
-        <div class="contact-social">
-            <a href="#" class="icon-social telegram"><svg class="icon">
-                    <use xlink:href="/src/assets/img/svg/sprite.svg#telegram"></use>
-                </svg></a>
-            <a href="#" class="icon-social whatsapp"><svg class="icon">
-                    <use xlink:href="/src/assets/img/svg/sprite.svg#whatsapp"></use>
-                </svg></a>
-            <a href="#" class="icon-social skype"><svg class="icon">
-                    <use xlink:href="/src/assets/img/svg/sprite.svg#skype"></use>
-                </svg></a>
-            <a href="#" class="icon-social vk"><svg class="icon">
-                    <use xlink:href="/src/assets/img/svg/sprite.svg#vk"></use>
-                </svg></a>
-            <a href="#" class="icon-social instagram"><svg class="icon">
-                    <use xlink:href="/src/assets/img/svg/sprite.svg#instagram"></use>
-                </svg></a>
-            <a href="#" class="icon-social youtube"><svg class="icon">
-                    <use xlink:href="/src/assets/img/svg/sprite.svg#youtube"></use>
-                </svg></a>
-        </div>
-        <div class="contact__map-wrapp">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
-                width="100%" height="375" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <SelectCity :list="tabs" :current="currentTab" :handle="handleTab" />
+        <template v-for="item in tabs" :key="item.id">
+            <ContactTabBlock v-if="item.id == currentTab" :desc="item.desc" :address="item.address" :phone="item.phone"
+                :email="item.email" :socials="item.socials" :iframeMap="item.iframeMap" />
+        </template>
         <h4 class="page__tile">Или заполните форму и с Вами свяжутся.</h4>
-        <form class="contact__form" action="">
-            <p class="text-in">Ваше имя</p>
-            <input class="text-input" type="text" name="" id="">
-            <p class="text-in">Ваш E-mail</p>
-            <input class="text-input" type="text" name="" id="">
-            <p class="text-in">Ваш Телефон</p>
-            <input class="text-input" type="text" name="" id="">
-            <p class="text-in">Ваше сообщение</p>
-            <textarea class="user__text-input" name="" id="" cols="30" rows="11"></textarea>
-            <input class="contact-btn btn" type="submit" value="Отправить">
-        </form>
+        <ContactForm />
     </div>
 </template>

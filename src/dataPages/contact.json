@@ -1,0 +1,215 @@
+{
+    "titlePage": "Контакты",
+    "tabs": [
+        {
+            "id": 0,
+            "name": "Москва",
+            "des": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+            "address": "г. Москва, Пакгаузное шоссе д.6",
+            "phone": "8 (450) 111 11 11",
+            "email": "info@axe.com",
+            "socials": [
+                {
+                    "type": "telegram",
+                    "path": "#"
+                },
+                {
+                    "type": "whatsapp",
+                    "path": "#"
+                },
+                {
+                    "type": "skype",
+                    "path": "#"
+                },
+                {
+                    "type": "vk",
+                    "path": "#"
+                },
+                {
+                    "type": "instagram",
+                    "path": "#"
+                },
+                {
+                    "type": "youtube",
+                    "path": "#"
+                }
+            ],
+            "iframeMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
+        },
+        {
+            "id": 1,
+            "name": "Санкт-Петербург",
+            "des": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+            "address": "г. Москва, Пакгаузное шоссе д.6",
+            "phone": "8 (450) 111 11 11",
+            "email": "info@axe.com",
+            "socials": [
+                {
+                    "type": "telegram",
+                    "path": "#"
+                },
+                {
+                    "type": "whatsapp",
+                    "path": "#"
+                },
+                {
+                    "type": "skype",
+                    "path": "#"
+                },
+                {
+                    "type": "vk",
+                    "path": "#"
+                },
+                {
+                    "type": "instagram",
+                    "path": "#"
+                },
+                {
+                    "type": "youtube",
+                    "path": "#"
+                }
+            ],
+            "iframeMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
+        },
+        {
+            "id": 2,
+            "name": "Сочи",
+            "des": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+            "address": "г. Москва, Пакгаузное шоссе д.6",
+            "phone": "8 (450) 111 11 11",
+            "email": "info@axe.com",
+            "socials": [
+                {
+                    "type": "telegram",
+                    "path": "#"
+                },
+                {
+                    "type": "whatsapp",
+                    "path": "#"
+                },
+                {
+                    "type": "skype",
+                    "path": "#"
+                },
+                {
+                    "type": "vk",
+                    "path": "#"
+                },
+                {
+                    "type": "instagram",
+                    "path": "#"
+                },
+                {
+                    "type": "youtube",
+                    "path": "#"
+                }
+            ],
+            "iframeMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
+        },
+        {
+            "id": 3,
+            "name": "Новосибирск",
+            "des": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+            "address": "г. Москва, Пакгаузное шоссе д.6",
+            "phone": "8 (450) 111 11 11",
+            "email": "info@axe.com",
+            "socials": [
+                {
+                    "type": "telegram",
+                    "path": "#"
+                },
+                {
+                    "type": "whatsapp",
+                    "path": "#"
+                },
+                {
+                    "type": "skype",
+                    "path": "#"
+                },
+                {
+                    "type": "vk",
+                    "path": "#"
+                },
+                {
+                    "type": "instagram",
+                    "path": "#"
+                },
+                {
+                    "type": "youtube",
+                    "path": "#"
+                }
+            ],
+            "iframeMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
+        },
+        {
+            "id": 4,
+            "name": "Екатеринбург",
+            "des": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+            "address": "г. Москва, Пакгаузное шоссе д.6",
+            "phone": "8 (450) 111 11 11",
+            "email": "info@axe.com",
+            "socials": [
+                {
+                    "type": "telegram",
+                    "path": "#"
+                },
+                {
+                    "type": "whatsapp",
+                    "path": "#"
+                },
+                {
+                    "type": "skype",
+                    "path": "#"
+                },
+                {
+                    "type": "vk",
+                    "path": "#"
+                },
+                {
+                    "type": "instagram",
+                    "path": "#"
+                },
+                {
+                    "type": "youtube",
+                    "path": "#"
+                }
+            ],
+            "iframeMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
+        },
+        {
+            "id": 5,
+            "name": "Нижний Новгород",
+            "des": " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+            "address": "г. Москва, Пакгаузное шоссе д.6",
+            "phone": "8 (450) 111 11 11",
+            "email": "info@axe.com",
+            "socials": [
+                {
+                    "type": "telegram",
+                    "path": "#"
+                },
+                {
+                    "type": "whatsapp",
+                    "path": "#"
+                },
+                {
+                    "type": "skype",
+                    "path": "#"
+                },
+                {
+                    "type": "vk",
+                    "path": "#"
+                },
+                {
+                    "type": "instagram",
+                    "path": "#"
+                },
+                {
+                    "type": "youtube",
+                    "path": "#"
+                }
+            ],
+            "iframeMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.16590281922!2d37.52285261593403!3d55.84243558057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537c2ec2cb541%3A0x7ed9fc317ad7b5bb!2z0J_QsNC60LPQsNGD0LfQvdC-0LUg0YguLCA2LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEyNTQzOA!5e0!3m2!1suk!2sua!4v1615738600751!5m2!1suk!2sua"
+        }
+    ]
+}

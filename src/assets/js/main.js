@@ -345,41 +345,7 @@ $(document).ready(function () {
 
     };
 
-
     orderSelect();
-
-    let citySelect = function () {
-        let selectHeader = document.querySelectorAll('.select__header-city ');
-        let selectItem = document.querySelectorAll('.select__item-city');
-
-        selectHeader.forEach(item => {
-            item.addEventListener('click', selectToggle)
-        });
-
-        selectItem.forEach(item => {
-            item.addEventListener('click', selectChoose)
-        });
-
-
-
-        function selectToggle() {
-            this.parentElement.classList.toggle('is-active');
-        }
-
-        function selectChoose() {
-            let text = this.innerHTML,
-                select = this.closest('.select-city'),
-                currentText = select.querySelector('.select__current-city');
-            currentText.innerHTML = text;
-            select.classList.remove('is-active');
-
-        }
-
-    };
-
-
-    citySelect();
-
 
     let select_tr = function () {
         let selectHeader = document.querySelectorAll('.select__header-tr');
