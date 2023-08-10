@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
 </script>
 
@@ -445,7 +446,7 @@ import BreadCrumbs from "@/components/BreadCrumbs.vue";
                 </div>
             </div>
             <div class="btn-center link">
-                <a href="#" class="btn">Каталог</a>
+                <RouterLink to="/catalog" class="btn">Каталог</RouterLink>
             </div>
         </div>
     </div>

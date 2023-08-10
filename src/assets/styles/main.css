@@ -4936,6 +4936,7 @@ textarea.error {
   line-height: 1.5;
   text-transform: uppercase;
   color: #000000;
+  background: transparent;
 }
 .news-page__pagination-item.pagination-active {
   color: #E30613;

@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
 </script>
 
@@ -62,7 +63,7 @@ import BreadCrumbs from "@/components/BreadCrumbs.vue";
                 продаваться в оптике или специализированном магазине. Для линз по рецепту рекомендуются линзы из
                 поликарбоната.</p>
             <div class="btn-center link">
-                <a href="#" class="btn">Каталог</a>
+                <RouterLink to="/catalog" class="btn">Каталог</RouterLink>
             </div>
         </div>
     </div>

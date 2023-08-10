@@ -1,5 +1,7 @@
 <script setup>
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
+import NewsBanner from "@/components/NewsBanner.vue";
+import CardNewBanerTypeTwo from "@/components/CardNewBanerTypeTwo.vue";
 </script>
 
 <template>
@@ -7,23 +9,12 @@ import BreadCrumbs from "@/components/BreadCrumbs.vue";
     <div class="container ">
         <h1 class="page__tile">Открытие горнолыжного сезона</h1>
         <div class="news-page__wrapp">
-            <div class="news-banner__block">
-                <h4 class="news-banner__title filt-bg">Новости </h4>
-                <a href="#" class="news__other">
-                    <img src="/src/assets/img/new-2.png" alt="">
-                    <span class="news__other-block">
-                        <spna class="news__other-title">Открытие магазина</spna>
-                        <spna class="news__other-date">11.12.20</spna>
-                    </span>
-                </a>
-                <a href="#" class="news__other">
-                    <img src="/src/assets/img/new-3.png" alt="">
-                    <span class="news__other-block">
-                        <spna class="news__other-title">Открытие магазина</spna>
-                        <spna class="news__other-date">11.12.20</spna>
-                    </span>
-                </a>
-            </div>
+            <NewsBanner :title="'Новости'">
+                <CardNewBanerTypeTwo :path="'#'" :scrImg="'/src/assets/img/new-2.png'" :label="'Открытие магазина'"
+                    :date="'11.12.20'" />
+                <CardNewBanerTypeTwo :path="'#'" :scrImg="'/src/assets/img/new-3.png'" :label="'Открытие магазина'"
+                    :date="'11.12.20'" />
+            </NewsBanner>
             <div class="news-page__block">
                 <div class="new-item__wrapp">
                     <div class="new-item__main-img">

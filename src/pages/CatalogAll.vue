@@ -1,5 +1,6 @@
 <script setup>
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
+import SelectSort from "@/components/SelectSort.vue";
 </script>
 
 <template>
@@ -41,24 +42,7 @@ import BreadCrumbs from "@/components/BreadCrumbs.vue";
                         <div class="filter__btn btn">Фильтры</div>
                         <div class="sort-column">
                             <div class="sort-text"> Сортировать по:</div>
-                            <div class="select">
-                                <div class="select__header">
-                                    <span class="select__current">Популярности<span class="current__arrow"></span></span>
-                                    <div class="select__icon"></div>
-                                </div>
-                                <div class="select__body">
-                                    <div class="select__item">Популярности<span class="select__arrow"></span>
-                                    </div>
-                                    <div class="select__item ">Цене <span class="select__arrow"><svg class="icon">
-                                                <use xlink:href="/src/assets/img/svg/sprite.svg#catalog-price__arrow-up">
-                                                </use>
-                                            </svg></span></div>
-                                    <div class="select__item ">Цене <span class="select__arrow"><svg class="icon">
-                                                <use xlink:href="/src/assets/img/svg/sprite.svg#catalog-price__arrow-down">
-                                                </use>
-                                            </svg></span></div>
-                                </div>
-                            </div>
+                            <SelectSort :value="'Популярности'" />
                         </div>
                         <div class="count-colum">Товаров:<span class="red">28</span></div>
                     </div>
