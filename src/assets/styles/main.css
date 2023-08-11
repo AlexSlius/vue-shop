@@ -973,7 +973,6 @@ input::-webkit-inner-spin-button {
 .select__body {
   background-color: #ffffff;
   border-top: 0;
-  display: none;
   left: 0;
   position: absolute;
   right: 0;
@@ -7656,4 +7655,8 @@ textarea.error {
 }
 @media (max-width: 360px) {
   /**/
+}
+
+.slider-tooltip.slider-tooltip-top {
+  display: none!important;
 }

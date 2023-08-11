@@ -2,7 +2,10 @@
 import { ref } from "vue";
 
 defineProps({
-    handleSelect: Function,
+    handleSelect: {
+        type: Function,
+        default: () => { }
+    },
     value: String
 });
 

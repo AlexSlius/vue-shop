@@ -1,6 +1,7 @@
 <script setup>
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
-import SelectSort from "@/components/SelectSort.vue";
+import SortCount from "@/components/SortCount.vue";
+import Filter from "@/components/Filter.vue"
 </script>
 
 <template>
@@ -13,39 +14,9 @@ import SelectSort from "@/components/SelectSort.vue";
     <div class="filter-product__wrapp">
         <div class="container ">
             <div class="filter-product__row">
-                <div class="filters__wrap">
-                    <h4 class="filter__title filt-bg">Фильтры <span class="filter__close"></span></h4>
-
-                    <h5 class="filter__title">Цена</h5>
-
-                    <div class="check__block">
-                        <div class="filter-price__inputs">
-                            <label class="filter-price__label">
-                                <input type="number" min="500" max="999999" placeholder="1000" class="filter-price__input"
-                                    id="input-0">
-
-                            </label>
-                            <span>-</span>
-                            <label class="filter-price__label">
-                                <input type="number" min="500" max="999999" placeholder="30000" class="filter-price__input"
-                                    id="input-1">
-
-                            </label>
-                        </div>
-
-                        <div class="filter-price__slider" id="range-slider"> </div>
-                    </div>
-
-                </div>
+                <Filter />
                 <div class="products__wrap">
-                    <div class="sort-count__block">
-                        <div class="filter__btn btn">Фильтры</div>
-                        <div class="sort-column">
-                            <div class="sort-text"> Сортировать по:</div>
-                            <SelectSort :value="'Популярности'" />
-                        </div>
-                        <div class="count-colum">Товаров:<span class="red">28</span></div>
-                    </div>
+                    <SortCount />
                     <div class="products__inner">
                         <div class="__item">
                             <div class="like-hit__row">
@@ -64,61 +35,6 @@ import SelectSort from "@/components/SelectSort.vue";
                             <p class="product__prise">2 500.00 р.</p>
                             <a href="#" class="btn red">В корзину</a>
                         </div>
-
-                        <div class="__item">
-                            <div class="like-hit__row">
-                                <a href="#" class="like"></a>
-                                <div class="hit__group">
-                                    <a href="#" class="hit">HIT</a>
-                                    <a href="#" class="man">MEN’s</a>
-                                    <a href="#" class="lady">LADY’s</a>
-                                </div>
-                            </div>
-                            <a href="#" class="product__img"><img
-                                    src="/src/assets/img/accessories_catalog/accessories_item-2.png" alt=""></a>
-                            <a href="#" class="product__name">jh-123p</a>
-                            <p class="product__subname">Солнце защитные очки</p>
-                            <p class="product__last-prise">3 000.00 р.</p>
-                            <p class="product__prise">2 500.00 р.</p>
-                            <a href="#" class="btn red">В корзину</a>
-                        </div>
-
-                        <div class="__item">
-                            <div class="like-hit__row">
-                                <a href="#" class="like"></a>
-                                <div class="hit__group">
-                                    <a href="#" class="hit">HIT</a>
-                                    <a href="#" class="man">MEN’s</a>
-                                    <a href="#" class="lady">LADY’s</a>
-                                </div>
-                            </div>
-                            <a href="#" class="product__img"><img
-                                    src="/src/assets/img/accessories_catalog/accessories_item-3.png" alt=""></a>
-                            <a href="#" class="product__name">iot-41q</a>
-                            <p class="product__subname">Солнце защитные очки</p>
-                            <p class="product__last-prise">3 000.00 р.</p>
-                            <p class="product__prise">2 500.00 р.</p>
-                            <a href="#" class="btn red">В корзину</a>
-                        </div>
-
-                        <div class="__item">
-                            <div class="like-hit__row">
-                                <a href="#" class="like"></a>
-                                <div class="hit__group">
-                                    <a href="#" class="hit">HIT</a>
-                                    <a href="#" class="man">MEN’s</a>
-                                    <a href="#" class="lady">LADY’s</a>
-                                </div>
-                            </div>
-                            <a href="#" class="product__img"><img
-                                    src="/src/assets/img/accessories_catalog/accessories_item-4.png" alt=""></a>
-                            <a href="#" class="product__name">wr-789q</a>
-                            <p class="product__subname">Солнце защитные очки</p>
-                            <p class="product__last-prise">3 000.00 р.</p>
-                            <p class="product__prise">2 500.00 р.</p>
-                            <a href="#" class="btn red">В корзину</a>
-                        </div>
-
                     </div>
                 </div>
             </div>
