@@ -1,5 +1,8 @@
 import './assets/styles/jquery.fancybox.min.css'
 import './assets/styles/nouislider.min.css'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import './assets/styles/main.css'
 
 import './assets/js/libs/jquery/jquery.min.js'

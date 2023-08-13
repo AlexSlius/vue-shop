@@ -9,16 +9,6 @@ $(document).ready(function () {
         $('.menu__btn').removeClass('pressed')
     })
 
-
-    $('.axe-group').each(function () {
-        let tog = $(this).find('.slider__product');
-        $(this).find('.axe-block').on('click tochend', function () {
-            $(this).find('.axe-arrow').toggleClass('axe-arrow-on ')
-            tog.toggleClass('slider__product-on')
-        })
-    });
-
-
     $('.menu__item').each(function () {
         let tog = $(this).find('.drop__list');
         tog.hide(1);
@@ -37,56 +27,6 @@ $(document).ready(function () {
             $(tab).slideDown(500);
         })
     });
-
-
-
-    $('.slider-main').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: false,
-
-                }
-            },
-        ]
-    });
-
-
-    $('.slider__product').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-
-                }
-            },
-            {
-                breakpoint: 401,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            },
-        ]
-    });
-
 
     $('.slider__news').slick({
         slidesToShow: 3,

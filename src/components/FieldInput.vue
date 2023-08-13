@@ -21,6 +21,6 @@ const typeClassField = (typeField == "greey") ? { "text-input": true } : { "orde
     <div>
         <p class="text-in" :class="typeClasslabel">{{ label }}</p>
         <input :class="{ 'error': error, ...typeClassField }" type="text" :value="value" :name="name"
-            @change="(e) => handle(e.target.value, e.target.name, e)">
+            @input="(e) => handle(e.target.value, e.target.name, e)">
     </div>
 </template>

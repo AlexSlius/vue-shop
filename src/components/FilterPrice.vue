@@ -13,16 +13,20 @@ const props = defineProps({
         type: Number,
         default: 500,
     },
-})
+});
 
 const data = reactive({
     value: [props.min, props.max],
 });
 
 const handleOne = (value) => {
+    let valNum = Number(value);
+    data.value = [valNum, data.value[1]];
 }
 
 const handleTwo = (value) => {
+    let valNum = Number(value);
+    data.value = [data.value[0], valNum];
 }
 </script>
 
