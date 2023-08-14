@@ -14,6 +14,7 @@ import YeyProtection from "@/pages/YeyProtection.vue";
 import YeyCarePage from "@/pages/YeyCare.vue";
 import InfoSportPage from "@/pages/InfoSport.vue";
 import InfoSunPage from "@/pages/InfoSun.vue";
+import SearchPage from "@/pages/Search.vue";
 import ErrorPage from '@/pages/404.vue';
 
 const router = createRouter({
@@ -73,6 +74,11 @@ const router = createRouter({
     {
       path: '/info-sun',
       component: InfoSunPage,
+    },
+    {
+      name: 'pageSearch',
+      path: "/search-page",
+      component: SearchPage
     },
     {
       path: '/:pathMatch(.*)*',

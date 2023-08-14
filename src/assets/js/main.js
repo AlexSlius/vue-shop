@@ -28,61 +28,6 @@ $(document).ready(function () {
         })
     });
 
-    $('.slider__news').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1201,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            },
-        ]
-    });
-
-
-
-    $('.about__slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 551,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-
-                }
-            },
-            {
-                breakpoint: 401,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-
-                }
-            },
-        ]
-
-    });
-
-
-
-
-
-
-
     $(document).ready(function () {
         footerToggle();
     });
@@ -289,28 +234,7 @@ $(document).ready(function () {
         $('.filters__wrap').removeClass('filter-on')
 
     })
-
-    $(".basket__count-inner").each(function () {
-        let $quantityArrowMinus = $(this).find(".minus");
-        let $quantityArrowPlus = $(this).find(".plus");
-        let $quantityNum = $(this).find('.basket__count')
-
-        $quantityArrowMinus.click(quantityMinus);
-        $quantityArrowPlus.click(quantityPlus);
-
-        function quantityMinus() {
-            if ($quantityNum.val() > 1) {
-                $quantityNum.val(+$quantityNum.val() - 1);
-            }
-        }
-
-        function quantityPlus() {
-            if ($quantityNum.val() < 30000) {
-                $quantityNum.val(+$quantityNum.val() + 1);
-            }
-        }
-    });
-
+   
     if ($(window).width() <= 1024) { // проверяешь расширении
         //.div - это куда нужно переместить
         // .titleProduct - что нужно переместить 

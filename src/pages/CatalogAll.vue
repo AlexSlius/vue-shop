@@ -3,6 +3,10 @@ import BreadCrumbs from "@/components/BreadCrumbs.vue";
 import SortCount from "@/components/SortCount.vue";
 import Filter from "@/components/Filter.vue";
 import CardProduct from "@/components/CardProduct.vue";
+
+import { useProductsStore } from "@/stores/products";
+
+const store = useProductsStore();
 </script>
 
 <template>
@@ -19,7 +23,7 @@ import CardProduct from "@/components/CardProduct.vue";
                 <div class="products__wrap">
                     <SortCount />
                     <div class="products__inner">
-                        <CardProduct />
+                        <CardProduct v-for="item in store.products" :key="item.id" :data="item" />
                     </div>
                 </div>
             </div>

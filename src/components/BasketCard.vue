@@ -1,0 +1,43 @@
+<script setup>
+defineProps({
+    data: Object,
+    delet: Function,
+    handleQuantityMinus: Function,
+    handlePlus: Function
+});
+</script>
+
+<template>
+    <div class="basket__wrapp-card">
+        <div class="basket__column-left">
+            <div class="basket__img-block">
+                <div class="basket__img-inner">
+                    <img class="basket__img" :src="data.photo" :alt="data.alt">
+                </div>
+                <span class="basket__img-delete" @click.even="delet(data.id)">Удалить</span>
+            </div>
+            <div class="basket__name-block">
+                <p class="basket__name">{{ data.model }}</p>
+                <p class="basket__subname">{{ data.name }} </p>
+            </div>
+        </div>
+        <div class="basket__column-right">
+            <div class="basket___one-block">
+                <p class="basket__column-name">Цена</p>
+                <p class="basket__price-one">{{ data.price }} р.</p>
+            </div>
+            <div class="basket___count-block">
+                <p class="basket__column-name">Количество</p>
+                <div class="basket__count-inner">
+                    <button class="count-btn minus" @click.even="handleQuantityMinus(data.id)">-</button>
+                    <input type="number" class="basket__count" :value="data.quantity">
+                    <button class="count-btn plus" @click.even="handlePlus(data.id)">+</button>
+                </div>
+            </div>
+            <div class="basket___sum-block">
+                <p class="basket__column-name">Цена</p>
+                <p class="basket__price-sum">{{ data.quantity * data.price }} р.</p>
+            </div>
+        </div>
+    </div>
+</template>

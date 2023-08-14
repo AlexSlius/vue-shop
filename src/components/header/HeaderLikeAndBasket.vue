@@ -1,5 +1,10 @@
 <script setup>
 import { RouterLink } from "vue-router";
+
+defineProps({
+    price: Number,
+    quantity: Number
+})
 </script>
 
 <template>
@@ -10,9 +15,9 @@ import { RouterLink } from "vue-router";
         </RouterLink>
         <div class="basket__block">
             <RouterLink to="/basked" class="icon__basket">
-                <span class="basket__counter counter">1</span>
+                <span class="basket__counter counter">{{ quantity }}</span>
             </RouterLink>
-            <span class="basket__text">В корзине<span class="light-red"> 2000 </span>р.</span>
+            <span class="basket__text">В корзине <span class="light-red"> {{ price }} </span> р.</span>
         </div>
     </div>
 </template>

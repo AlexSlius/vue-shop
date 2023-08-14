@@ -6,6 +6,10 @@ import FilterImg from "@/components/FilterImg.vue";
 import PageImg from "@/components/PageImg.vue";
 import CatalogTextGroup from "@/components/CatalogTextGroup.vue";
 import CardProduct from "@/components/CardProduct.vue";
+
+import { useProductsStore } from "@/stores/products";
+
+const store = useProductsStore();
 </script>
 
 <template>
@@ -28,7 +32,7 @@ import CardProduct from "@/components/CardProduct.vue";
                         <div class="count-colum">Товаров:<span class="red">28</span></div>
                     </div>
                     <div class="products__inner">
-                        <CardProduct />
+                        <CardProduct v-for="item in store.products" :key="item.id" :data="item" />
                     </div>
                 </div>
             </div>

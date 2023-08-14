@@ -1,10 +1,29 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import { reactive } from "vue";
+import { RouterLink, useRouter } from 'vue-router';
 
 import HeaderContact from "./HeaderContact.vue";
 import HeaderLikeAndBasket from "./HeaderLikeAndBasket.vue";
 import HeaderSearch from "./HeaderSearch.vue";
 import IconSprite from "@/components/IconSprite.vue";
+
+import { useBaskedStore } from "../../stores/baskeds";
+
+const router = useRouter();
+const store = useBaskedStore();
+
+const dataSearch = reactive({ value: '' });
+
+const handleSearchInput = (e) => {
+    dataSearch.value = e.target.value;
+}
+
+const handleNextSearch = () => {
+    if (dataSearch.value.length > 0) {
+        router.push({ name: 'pageSearch', query: { searchText: dataSearch.value } });
+        dataSearch.value = '';
+    }
+}
 </script>
 
 <template>
@@ -14,9 +33,10 @@ import IconSprite from "@/components/IconSprite.vue";
                 <RouterLink to="/" class="logo">
                     <img src="/src/assets/img/Logo.svg" alt="" class="img-logo">
                 </RouterLink>
-                <HeaderSearch />
+                <HeaderSearch :value="dataSearch.value" :handleInput="handleSearchInput"
+                    :handleNextSearch="handleNextSearch" />
                 <HeaderContact />
-                <HeaderLikeAndBasket />
+                <HeaderLikeAndBasket :quantity="store.getlengthAll" :price="store.getPriceAll"/>
             </div>
         </div>
         <div class="menu__wrapp">
@@ -80,7 +100,7 @@ import IconSprite from "@/components/IconSprite.vue";
                             </li>
                         </ul>
                     </nav>
-                    <HeaderLikeAndBasket />
+                    <HeaderLikeAndBasket :quantity="store.getlengthAll" :price="store.getPriceAll"/>
                     <HeaderContact />
                 </div>
             </div>

@@ -4,10 +4,14 @@ import { Navigation } from 'swiper/modules';
 
 import CardProduct from "@/components/CardProduct.vue";
 
+import { useBaskedStore } from "@/stores/baskeds";
+
 defineProps({
-    title: String
+    title: String,
+    dataProducts: Array
 });
 
+const store = useBaskedStore();
 </script>
 
 <template>
@@ -16,8 +20,8 @@ defineProps({
             <h1 class="page__title">{{ title }}</h1>
             <div class="slider__product">
                 <Swiper :slides-per-view="4" :space-between="30" :navigation="true" :modules="[Navigation]">
-                    <SwiperSlide>
-                        <CardProduct />
+                    <SwiperSlide v-for="item in dataProducts" :key="item.id">
+                        <CardProduct :data="item" :handleAddBasked="store.addProduct"/>
                     </SwiperSlide>
                 </Swiper>
             </div>

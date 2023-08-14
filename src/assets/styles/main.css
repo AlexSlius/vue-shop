@@ -2738,8 +2738,6 @@ textarea.error {
 }
 
 .slider__news {
-  display: flex;
-  margin: 0 -15px;
   position: relative;
 }
 
@@ -2963,8 +2961,6 @@ textarea.error {
 
 .about .about__slider {
   padding: 0 90px;
-  display: flex;
-  margin: 0 -15px;
   position: relative;
 }
 
