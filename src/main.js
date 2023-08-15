@@ -11,6 +11,8 @@ import './assets/js/libs/nouislider.min.js'
 import './assets/js/libs/slick.min.js'
 import './assets/js/main'
 
+import directiveVMax from "@/directives/vMax";
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -20,6 +22,7 @@ import router from './router'
 const app = createApp(App)
 
 app.use(createPinia());
+app.directive('maxlen', directiveVMax);
 app.use(router);
 
 app.mount('#app');

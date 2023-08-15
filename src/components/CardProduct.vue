@@ -1,10 +1,18 @@
 <script setup>
+import { watchEffect, ref } from "vue";
 import { RouterLink } from "vue-router";
 
-defineProps({
+import { useBaskedStore } from "@/stores/baskeds";
+
+const props = defineProps({
     data: Object,
     handleAddBasked: Function
 })
+
+const inTheBasked = ref(false);
+const store = useBaskedStore();
+
+watchEffect(() => inTheBasked.value = store.getProductInTheBasked(props.data.id));
 </script>
 
 <template>
@@ -12,7 +20,8 @@ defineProps({
         <div class="like-hit__row">
             <button class="like"></button>
             <div class="hit__group" v-if="data.tags?.length > 0">
-                <RouterLink to="#" :class="itemTag.class" v-for="itemTag in data.tags" :key="itemTag.id">{{ itemTag.name }}</RouterLink>
+                <RouterLink to="#" :class="itemTag.class" v-for="itemTag in data.tags" :key="itemTag.id">{{ itemTag.name }}
+                </RouterLink>
             </div>
         </div>
         <RouterLink :to="`/card/${id}`" class="product__img">
@@ -22,6 +31,6 @@ defineProps({
         <p class="product__subname">{{ data.name }}</p>
         <p class="product__last-prise">{{ data.priceLast }} р.</p>
         <p class="product__prise">{{ data.price }} р.</p>
-        <button class="btn red" @click.even="handleAddBasked(data)">В корзину</button>
+        <button class="btn red" :class="{ btn_active: inTheBasked }" @click.even="handleAddBasked(data)">{{ inTheBasked ? "В корзині" : "В корзину" }}</button>
     </div>
 </template>

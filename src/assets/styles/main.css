@@ -2484,7 +2484,13 @@ textarea.error {
   transition: 0.4s;
 }
 
-.btn:hover {
+.btn:disabled,
+button:disabled {
+  opacity: 0.6;
+}
+
+.btn:hover,
+.btn.btn_active {
   transition: 0.4s;
   background-color: #E30613;
   color: #ffffff;
