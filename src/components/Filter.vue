@@ -1,6 +1,9 @@
 <script setup>
 import FilterCheckboxCategory from "@/components/FilterCheckboxCategory.vue";
 import FilterCheckboxStyle from "@/components/FilterCheckboxStyle.vue";
+import FilterPrice from "@/components/FilterPrice.vue";
+
+import { useFilterStore } from "@/stores/filter";
 
 const DATA_FILTER = {
     categorys: [
@@ -62,9 +65,17 @@ defineProps({
         type: Boolean,
         default: false,
     }
-})
+});
 
-import FilterPrice from "@/components/FilterPrice.vue";
+const {
+    filter: {
+        price
+    },
+    updatePriceMin,
+    updatePriceMax,
+    handleRange
+} = useFilterStore();
+
 </script>
 
 <template>
@@ -87,7 +98,8 @@ import FilterPrice from "@/components/FilterPrice.vue";
 
         <h5 class="filter__title">Цена</h5>
         <div class="check__block">
-            <FilterPrice />
+            <FilterPrice :valueMin="price.min" :valueMax="price.max" :handleOne="updatePriceMin"
+                :handleTwo="updatePriceMax" :handleRange="handleRange"/>
         </div>
 
         <slot></slot>

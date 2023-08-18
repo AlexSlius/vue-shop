@@ -13,9 +13,9 @@ const store = useProductsStore();
 
 <template>
     <SliderMain />
-    <SectionCategorys :dataProducts="store.products" />
-    <SectionProducts :title="'популярное'" :dataProducts="store.products" />
-    <SectionProducts :title="'Аксессуары'" :dataProducts="store.products" />
+    <SectionCategorys :dataProducts="store.getPropductsInQuantity(6)" />
+    <SectionProducts :title="'популярное'" :dataProducts="store.getPropductsInQuantity(6)" />
+    <SectionProducts :title="'Аксессуары'" :dataProducts="store.getPropductsInQuantity(6)" />
     <SectionFunctional />
     <SectionNews />
     <SectionAbout />

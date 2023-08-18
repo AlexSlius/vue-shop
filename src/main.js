@@ -12,6 +12,7 @@ import './assets/js/libs/slick.min.js'
 import './assets/js/main'
 
 import directiveVMax from "@/directives/vMax";
+import directiveInputPrice from "@/directives/inputPrice";
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -23,6 +24,7 @@ const app = createApp(App)
 
 app.use(createPinia());
 app.directive('maxlen', directiveVMax);
+app.directive('maxminnumber', directiveInputPrice);
 app.use(router);
 
 app.mount('#app');

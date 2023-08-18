@@ -77,13 +77,9 @@ export const useBaskedStore = defineStore('baskedStore', () => {
             baskedPrice.value = promoCode.discount;
         }
 
-        if(!promoCode) {
+        if (!promoCode) {
             baskedErrorPromoCode.value = true;
         }
-    }
-
-    const cleanPromocode = () => {
-        
     }
 
     // getters
@@ -95,7 +91,15 @@ export const useBaskedStore = defineStore('baskedStore', () => {
                 fullprice += Number(item.quantity * item.price);
             })
 
-        return fullprice - baskedPrice.value;
+        let rePrice = fullprice - baskedPrice.value;
+
+        if (rePrice < 0) {
+            baskedErrorPromoCode.value = true;
+
+            rePrice = fullprice;
+        }
+
+        return rePrice;
     });
 
     const getlengthAll = computed(() => {
@@ -115,8 +119,6 @@ export const useBaskedStore = defineStore('baskedStore', () => {
 
         return false;
     }
-
-    // watchEffect(() => console.log(baskedProducts.value))
 
     return {
         baskedProducts,

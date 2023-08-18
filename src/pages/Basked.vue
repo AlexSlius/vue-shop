@@ -19,7 +19,7 @@ const store = useBaskedStore();
                 :handleQuantityMinus="store.quantityMinus" :handlePlus="store.quantityPlus" />
             <div class="basket__wrapp-total">
                 <BaskedPromocode :value="store.baskedPromocod" :handleInput="store.inputPromoCode"
-                    :handleApplyPromoCode="store.applyPromoCode" :error="store.baskedErrorPromoCode" />
+                    :handleApplyPromoCode="store.applyPromoCode" :error="store.baskedErrorPromoCode || store.getPriceAll < 0 "/>
                 <div class="basket__total">
                     <div class="basket__total-group">
                         <p class="basket__total-title">Итого к оплате:</p>

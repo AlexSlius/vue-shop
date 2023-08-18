@@ -1,12 +1,23 @@
 <script setup>
+import { watchEffect, ref } from "vue";
 import BreadCrumbs from "@/components/BreadCrumbs.vue";
 import SortCount from "@/components/SortCount.vue";
 import Filter from "@/components/Filter.vue";
 import CardProduct from "@/components/CardProduct.vue";
 
 import { useProductsStore } from "@/stores/products";
+import { useSort } from "@/stores/sort";
+import { useBaskedStore } from "@/stores/baskeds";
+
+const products = ref();
 
 const store = useProductsStore();
+const storeSort = useSort();
+const storeBasked = useBaskedStore();
+
+watchEffect(() => {
+    products.value = store.getProdunctsByFilterAndSorting({ sort: storeSort.sort })
+});
 </script>
 
 <template>
@@ -21,9 +32,10 @@ const store = useProductsStore();
             <div class="filter-product__row">
                 <Filter />
                 <div class="products__wrap">
-                    <SortCount />
+                    <SortCount :quantity="products.length" :handleSelect="storeSort.updateSort"
+                        :valueSelect="storeSort.sort" />
                     <div class="products__inner">
-                        <CardProduct v-for="item in store.products" :key="item.id" :data="item" />
+                        <CardProduct v-for="item in products" :key="item.id" :data="item" :handleAddBasked="storeBasked.addProduct"/>
                     </div>
                 </div>
             </div>

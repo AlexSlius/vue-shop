@@ -24,7 +24,7 @@ watchEffect(() => inTheBasked.value = store.getProductInTheBasked(props.data.id)
                 </RouterLink>
             </div>
         </div>
-        <RouterLink :to="`/card/${id}`" class="product__img">
+        <RouterLink :to="`/card/${data.id}`" class="product__img">
             <img :src="data.photo" :alt="data.alt">
         </RouterLink>
         <RouterLink :to="`/card/${data.id}`" class="product__name">{{ data.model }}</RouterLink>
