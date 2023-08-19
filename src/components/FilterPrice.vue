@@ -15,7 +15,8 @@ const props = defineProps({
     valueMax: Number,
     handleOne: Function,
     handleTwo: Function,
-    handleRange: Function
+    handleRange: Function,
+    handleSend: Function,
 });
 </script>
 
@@ -26,7 +27,7 @@ const props = defineProps({
         <span>-</span>
         <FieldPrice :value="valueMax" :min="min" :max="max" :handle="handleTwo" :other="valueMin" :name="'maxPrice'"
             :arg="'max'" />
-        <button class="btn-ok">Ok</button>
+        <button class="btn-ok" @click.even="handleSend">Ok</button>
     </div>
     <Range :data="{ value: [valueMin, valueMax] }" :min="min" :max="max" :handleRange="handleRange" />
 </template>

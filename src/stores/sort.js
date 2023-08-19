@@ -12,8 +12,16 @@ export const useSort = defineStore('sortStore', () => {
         sort.value = { type, name };
     }
 
+    const defaultSort = () => {
+        sort.value = {
+            type: "pop",
+            name: "Популярности"
+        }
+    }
+
     return {
         sort,
-        updateSort
+        updateSort,
+        defaultSort
     };
 })

@@ -64,7 +64,8 @@ defineProps({
     all: {
         type: Boolean,
         default: false,
-    }
+    },
+    handleSenByPrice: Function
 });
 
 const {
@@ -98,8 +99,8 @@ const {
 
         <h5 class="filter__title">Цена</h5>
         <div class="check__block">
-            <FilterPrice :valueMin="price.min" :valueMax="price.max" :handleOne="updatePriceMin"
-                :handleTwo="updatePriceMax" :handleRange="handleRange"/>
+            <FilterPrice :valueMin="price.min" :valueMax="price.max" :handleOne="updatePriceMin" :handleTwo="updatePriceMax"
+                :handleRange="handleRange" :handleSend="handleSenByPrice" />
         </div>
 
         <slot></slot>

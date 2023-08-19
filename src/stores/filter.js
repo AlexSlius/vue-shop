@@ -23,10 +23,20 @@ export const useFilterStore = defineStore("useFilterStore", () => {
         filter.value.price.max = value[1];
     }
 
+    const defaultFilter = () => {
+        filter.value = {
+            price: {
+                min: 500,
+                max: 20000
+            }
+        }
+    }
+
     return {
         filter,
         updatePriceMin,
         updatePriceMax,
-        handleRange
+        handleRange,
+        defaultFilter
     };
 })
