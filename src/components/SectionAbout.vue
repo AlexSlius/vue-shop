@@ -1,6 +1,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation } from 'swiper/modules';
+import { RouterLink } from 'vue-router';
 
 </script>
 
@@ -17,43 +18,44 @@ import { Navigation } from 'swiper/modules';
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <a href="#" class="more">Подробнее>></a>
+                <RouterLink to="/about" class="more">Подробнее>></RouterLink>
                 <div class="about__slider">
                     <Swiper :slides-per-view="3" :space-between="30" :navigation="true" :modules="[Navigation]">
                         <SwiperSlide>
                             <div class="about__elem">
-                                <a href="#" class="">
+                                <a href="/src/assets/img/about-2.png" download>
                                     <img src="/src/assets/img/about-1.png" alt="">
                                 </a>
-                                <a href="#" class="">Скачать>></a>
+                                <a href="/src/assets/img/about-2.png" download>Скачать>></a>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="about__elem">
-                                <a href="#" class="">
+                                <a href="/src/assets/img/about-2.png" download>
                                     <img src="/src/assets/img/about-2.png" alt="">
                                 </a>
-                                <a href="#" class="">Скачать>></a>
+                                <a href="/src/assets/img/about-2.png" download>Скачать>></a>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="about__elem">
-                                <a href="#" class="">
+                                <a href="/src/assets/img/about-2.png" download>
                                     <img src="/src/assets/img/about-3.png" alt="">
                                 </a>
-                                <a href="#" class="">Скачать>></a>
+                                <a href="/src/assets/img/about-2.png" download>Скачать>></a>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="about__elem">
-                                <a href="#" class="">
+                                <a href="/src/assets/img/about-2.png" download>
                                     <img src="/src/assets/img/about-2.png" alt="">
                                 </a>
-                                <a href="#" class="">Скачать>></a>
+                                <a href="/src/assets/img/about-2.png" download>Скачать>></a>
                             </div>
                         </SwiperSlide>
                     </Swiper>
                 </div>
+                <br/>
             </div>
         </div>
     </section>

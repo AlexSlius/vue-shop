@@ -27,7 +27,7 @@ const storeFilter = useFilterStore();
 let pageD = dataPage[route.params?.id];
 
 const handleSenByPrice = ({ category }) => {
-    products.value = store.getProdunctsByFilterAndSorting({ sort: storeSort.sort, filter: storeFilter.filter, category });
+    products.value = store.getProdunctsByFilterAndSorting({ sort: storeSort.sort, filter: storeFilter.filter, category, functions: storeFilter.filter.functions, styles: storeFilter.filter.styles });
 }
 
 const hande = () => {
@@ -35,17 +35,20 @@ const hande = () => {
 }
 
 watch(
-    () => [storeSort.sort.type],
-    (type) => {
-        handleSenByPrice({ category: route.params?.id })
-    }
+    () => [storeSort.sort.type, storeFilter.filter.functions, storeFilter.filter.styles],
+    () => {
+        handleSenByPrice({ category: route.params?.id });
+    },
+    { deep: true }
 );
 
+// визивається перед монтування компоненту
 onBeforeMount(() => {
     storeSort.defaultSort();
     storeFilter.defaultFilter();
 });
 
+// визивається після монтування компоненту
 onMounted(() => {
     handleSenByPrice({ category: route.params?.id });
 });
@@ -72,8 +75,11 @@ onBeforeRouteUpdate((to, from, next) => {
                     <SortCount :quantity="products?.length || 0" :handleSelect="storeSort.updateSort"
                         :valueSelect="storeSort.sort" />
                     <div class="products__inner">
-                        <CardProduct v-for="item in products" :key="item.id" :data="item"
-                            :handleAddBasked="storeBasked.addProduct" />
+                        <template v-if="products?.length > 0">
+                            <CardProduct v-for="item in products" :key="item.id" :data="item"
+                                :handleAddBasked="storeBasked.addProduct" />
+                        </template>
+                        <div class="div-empty" v-if="products?.length == 0">Пусто</div>
                     </div>
                 </div>
             </div>

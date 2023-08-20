@@ -3,15 +3,19 @@ import { RouterLink } from "vue-router";
 
 defineProps({
     price: Number,
-    quantity: Number
+    quantity: Number,
+    quantityLike: {
+        type: Number,
+        default: 0
+    }
 })
 </script>
 
 <template>
     <div class="like-basket__block">
         <div class="menu__btn"><span></span></div>
-        <RouterLink to="#" class="icon__like">
-            <span class="like__counter counter">0</span>
+        <RouterLink to="/likes" class="icon__like">
+            <span class="like__counter counter">{{ quantityLike }}</span>
         </RouterLink>
         <div class="basket__block">
             <RouterLink to="/basked" class="icon__basket">

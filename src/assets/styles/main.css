@@ -878,6 +878,17 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.products__wrap_like {
+  width: 100%;
+}
+
+@media(min-width: 1110px) {
+  .products__wrap_like .products__inner .__item {
+    width: calc(25% - 30px);
+    margin-bottom: 40px;
+  }
+}
+
 .products__inner {
   width: 100%;
   display: flex;
@@ -2365,7 +2376,8 @@ textarea.error {
   transition: 0.4s;
 }
 
-.like:hover {
+.like:hover,
+.like.hover {
   transition: 0.4s;
   background-image: url("/src/assets/img/icons/like-a.svg");
 }
@@ -8451,23 +8463,26 @@ button:disabled {
   margin: 0;
 }
 
-.swiper-button-prev, .swiper-button-next {
-  width: 36px!important;
-  height: 36px!important;
-  background: #80808073!important;
+.swiper-button-prev,
+.swiper-button-next {
+  width: 36px !important;
+  height: 36px !important;
+  background: #80808073 !important;
   transition: 0.3s;
 }
 
-.swiper-button-prev:hover, .swiper-button-next:hover {
-  background: #808080f5!important;
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #808080f5 !important;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
-  font-size: 28px!important;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 28px !important;
 }
 
 .swiper {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 @media (max-width: 1200px) {
@@ -8496,4 +8511,11 @@ button:disabled {
 
 .slider-tooltip.slider-tooltip-top {
   display: none !important;
+}
+
+.div-empty {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
 }

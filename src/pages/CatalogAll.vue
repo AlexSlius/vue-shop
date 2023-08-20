@@ -56,8 +56,11 @@ onMounted(() => {
                     <SortCount :quantity="products?.length || 0" :handleSelect="storeSort.updateSort"
                         :valueSelect="storeSort.sort" />
                     <div class="products__inner">
-                        <CardProduct v-for="item in products" :key="item.id" :data="item"
-                            :handleAddBasked="storeBasked.addProduct" />
+                        <template v-if="products?.length > 0">
+                            <CardProduct v-for="item in products" :key="item.id" :data="item"
+                                :handleAddBasked="storeBasked.addProduct" />
+                        </template>
+                        <div class="div-empty" v-if="products?.length == 0">Пусто</div>
                     </div>
                 </div>
             </div>

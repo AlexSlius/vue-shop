@@ -8,9 +8,11 @@ import HeaderSearch from "./HeaderSearch.vue";
 import IconSprite from "@/components/IconSprite.vue";
 
 import { useBaskedStore } from "../../stores/baskeds";
+import { useLikeProduct } from "../../stores/likeProduct";
 
 const router = useRouter();
 const store = useBaskedStore();
+const {  likeProducts } = useLikeProduct();
 
 const dataSearch = reactive({ value: '' });
 
@@ -24,6 +26,7 @@ const handleNextSearch = () => {
         dataSearch.value = '';
     }
 }
+
 </script>
 
 <template>
@@ -36,7 +39,8 @@ const handleNextSearch = () => {
                 <HeaderSearch :value="dataSearch.value" :handleInput="handleSearchInput"
                     :handleNextSearch="handleNextSearch" />
                 <HeaderContact />
-                <HeaderLikeAndBasket :quantity="store.getlengthAll" :price="store.getPriceAll"/>
+                <HeaderLikeAndBasket :quantity="store.getlengthAll" :price="store.getPriceAll"
+                    :quantityLike="likeProducts.length" />
             </div>
         </div>
         <div class="menu__wrapp">
@@ -100,7 +104,8 @@ const handleNextSearch = () => {
                             </li>
                         </ul>
                     </nav>
-                    <HeaderLikeAndBasket :quantity="store.getlengthAll" :price="store.getPriceAll"/>
+                    <HeaderLikeAndBasket :quantity="store.getlengthAll" :price="store.getPriceAll"
+                        :quantityLike="likeProducts.length" />
                     <HeaderContact />
                 </div>
             </div>

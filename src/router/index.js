@@ -5,6 +5,7 @@ import HomePage from '@/pages/Home.vue';
 import AboutPage from '@/pages/About.vue';
 import CataloglllPage from '@/pages/CatalogAll.vue';
 import CatalogCategory from "@/pages/CatalogCategory.vue";
+import LikesPage from "@/pages/LikesPage.vue";
 import ContactPage from "@/pages/Contact.vue";
 import NewsPage from "@/pages/News.vue";
 import NewPage from "@/pages/New.vue";
@@ -38,6 +39,11 @@ const router = createRouter({
     {
       path: '/catalog/:id',
       component: CatalogCategory,
+    },
+    {
+      path: '/likes',
+      name: 'likes',
+      component: LikesPage,
     },
     {
       path: "/contact",
