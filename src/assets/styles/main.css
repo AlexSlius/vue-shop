@@ -3193,6 +3193,13 @@ button:disabled {
   right: 0;
   transform: translate(50%, -50%);
   z-index: 5;
+  height: 180px;
+  width: 60;
+}
+
+.card__item-slider-wrapp .swiper {
+  height: 180px;
+  width: 60px;
 }
 
 @media (max-width: 500px) {

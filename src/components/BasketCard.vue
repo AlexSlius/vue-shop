@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from "vue-router";
+
 defineProps({
     data: Object,
     delet: Function,
@@ -12,13 +14,23 @@ defineProps({
         <div class="basket__column-left">
             <div class="basket__img-block">
                 <div class="basket__img-inner">
-                    <img class="basket__img" :src="data.photo" :alt="data.alt">
+                    <RouterLink :to="`/card/${data.id}`">
+                        <img class="basket__img" :src="data.photo" :alt="data.alt">
+                    </RouterLink>
                 </div>
                 <span class="basket__img-delete" @click.even="delet(data.id)">Удалить</span>
             </div>
             <div class="basket__name-block">
-                <p class="basket__name">{{ data.model }}</p>
-                <p class="basket__subname">{{ data.name }} </p>
+                <p class="basket__name">
+                    <RouterLink :to="`/card/${data.id}`">
+                        {{ data.model }}
+                    </RouterLink>
+                </p>
+                <p class="basket__subname">
+                    <RouterLink :to="`/card/${data.id}`">
+                        {{ data.name }}
+                    </RouterLink>
+                </p>
             </div>
         </div>
         <div class="basket__column-right">

@@ -74,7 +74,6 @@ export const useProductsStore = defineStore('products', () => {
         "ladys", "kids", "tenns"
       ]
     },
-
     {
       "id": 3,
       "tags": [
@@ -211,7 +210,6 @@ export const useProductsStore = defineStore('products', () => {
         "unisex"
       ]
     },
-
     {
       "id": 7,
       "tags": [
@@ -707,10 +705,29 @@ export const useProductsStore = defineStore('products', () => {
     });
   }
 
+  const getProductById = ({ ids, currentIdPage }) => {
+    if (ids?.length > 0) {
+      return products.value.filter((el) => (ids.includes(el.id) && (el.id != currentIdPage)));
+    }
+
+    return [];
+  }
+
+  const getProductOneById = (id) => {
+    let fil = products.value.filter(el => el.id == id);
+
+    if (fil?.length > 0)
+      return fil[0];
+
+    return null;
+  }
+
   return {
     products,
     getPropductsInQuantity,
     getProdunctsByFilterAndSorting,
-    getBySearch
+    getBySearch,
+    getProductById,
+    getProductOneById
   };
 })

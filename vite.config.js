@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/front/vue-shop/',
+  // base: '/front/vue-shop/',
   plugins: [
     vue(),
   ],
