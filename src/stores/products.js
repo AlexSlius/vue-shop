@@ -38,6 +38,88 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex", "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        },
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -72,6 +154,78 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -106,6 +260,70 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -140,6 +358,70 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -174,6 +456,71 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex", "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        }
       ]
     },
     {
@@ -208,6 +555,70 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "unisex"
+      ],
+      "forWhom": [
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -242,6 +653,70 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -276,6 +751,70 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys"
+      ],
+      "forWhom": [
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -310,6 +849,67 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
       ]
     },
     {
@@ -344,6 +944,59 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "unisex"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        },
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
       ]
     },
     {
@@ -378,6 +1031,76 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex", "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        },
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -412,6 +1135,75 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -446,6 +1238,63 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -480,6 +1329,71 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -514,6 +1428,71 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -548,6 +1527,71 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        },
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -582,6 +1626,70 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys"
+      ],
+      "forWhom": [
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -616,6 +1724,75 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        },
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Двойная линза",
+          "value": "да"
+        },
+        {
+          "name": "Поляризация",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -650,6 +1827,75 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys"
+      ],
+      "forWhom": [
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 0,
+          "color": "Чорний",
+          "img": "/src/assets/img/card__item/color-1.png"
+        },
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     },
     {
@@ -684,6 +1930,75 @@ export const useProductsStore = defineStore('products', () => {
       ],
       "styles": [
         "ladys", "unisex", "kids", "tenns"
+      ],
+      "forWhom": [
+        {
+          "id": "0",
+          "name": "MEN's",
+          "class": "man",
+        },
+        {
+          "id": "1",
+          "name": "NEW",
+          "class": "new",
+        }
+      ],
+      "colors": [
+        {
+          "id": 1,
+          "color": "Синій",
+          "img": "/src/assets/img/card__item/color-2.png"
+        }
+      ],
+      "characteristic": [
+        {
+          "name": "Цвет стекла",
+          "value": "фиолетовый"
+        },
+        {
+          "name": "Цвет оправы",
+          "value": "черный"
+        },
+        {
+          "name": "Размеры",
+          "value": "150 мм - 45 мм"
+        },
+        {
+          "name": "Материал линз",
+          "value": "полимер"
+        },
+        {
+          "name": "Коэффициент светопропускания",
+          "value": "0,8"
+        },
+        {
+          "name": "УФ Защита",
+          "value": "да"
+        },
+        {
+          "name": "Интеграция со шлемом",
+          "value": "да"
+        },
+        {
+          "name": "Серия",
+          "value": "см123764"
+        },
+        {
+          "name": "Стиль",
+          "value": "мужские"
+        },
+        {
+          "name": "Сменные линзы	",
+          "value": "нет"
+        },
+        {
+          "name": "Увлажнение глаз",
+          "value": "нет"
+        },
+        {
+          "name": "Лупа",
+          "value": "нет"
+        }
       ]
     }
   ]);

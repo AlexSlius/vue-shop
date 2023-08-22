@@ -4,7 +4,12 @@ import CardBlockIconProd from "@/components/CardBlockIconProd.vue";
 import CardProdTable from "@/components/CardProdTable.vue";
 
 defineProps({
-    dataProduct: Object
+    dataProduct: Object,
+    addProduct: Function,
+    inTheBasked: Boolean,
+    handleSelectColor: Function,
+    selectColor: [Object, null],
+    openModal: Function
 });
 </script>
 
@@ -21,19 +26,21 @@ defineProps({
                         <div class="card-item-column-r__inner">
                             <div class="card__item__title-block">
                                 <h1 class="card__item-title">{{ dataProduct?.model }}</h1>
-                                <span class="man">MEN's</span>
-                                <span class="new">NEW</span>
+                                <template v-if="dataProduct?.forWhom?.length > 0">
+                                    <span v-for="item in dataProduct?.forWhom" :key="item.id" :class="item.class">{{
+                                        item.name }}</span>
+                                </template>
                             </div>
                             <div class="card__item-price_btn">
                                 <p class="card__item-subtitle">{{ dataProduct?.name }}</p>
                                 <div class="card__item__color-block">
                                     <p class="card__item__color-text">Цвет</p>
-                                    <div class="card__item__color__img-block">
-                                        <div class="card__item__color__img color-active">
-                                            <img src="/src/assets/img/card__item/color-1.png" alt="">
-                                        </div>
-                                        <div class="card__item__color__img">
-                                            <img src="/src/assets/img/card__item/color-2.png" alt="">
+                                    <div class="card__item__color__img-block" v-if="dataProduct?.colors?.length > 0">
+                                        <div class="card__item__color__img"
+                                            :class="{ 'color-active': selectColor?.id == item.id }"
+                                            v-for="item in dataProduct?.colors" :key="item.id"
+                                            @click="handleSelectColor({ value: item })">
+                                            <img :src="item.img" alt="img color">
                                         </div>
                                     </div>
                                 </div>
@@ -41,15 +48,16 @@ defineProps({
                                     <p class="card__item__price">{{ dataProduct?.price }} р.</p>
                                     <p class="card__item__price-last">{{ dataProduct?.priceLast }} р.</p>
                                 </div>
-                                <p class="card__item__discount-text">Вы экономите {{ dataProduct?.priceLast || 0  - dataProduct?.price || 0 }} р.</p>
+                                <p class="card__item__discount-text">Вы экономите {{ dataProduct?.priceLast || 0 -
+                                    dataProduct?.price || 0 }} р.</p>
                                 <div class="card__item__btn-block">
-                                    <button class="card__item__btn btn bask-btn" data-fancybox href="#fncbx-basket">В
-                                        корзину</button>
-                                    <button class="card__item__btn btn one-btn" data-fancybox href="#fncbx-one">Купить
+                                    <button class="card__item__btn btn bask-btn " :class="{ 'btn_active': inTheBasked }"
+                                        @click="addProduct(dataProduct)">В корзину</button>
+                                    <button class="card__item__btn btn one-btn" @click="openModal">Купить
                                         в один клик</button>
                                 </div>
                             </div>
-                            <CardProdTable />
+                            <CardProdTable :dataCharacteristic="dataProduct?.characteristic" />
                         </div>
                     </div>
                 </div>
